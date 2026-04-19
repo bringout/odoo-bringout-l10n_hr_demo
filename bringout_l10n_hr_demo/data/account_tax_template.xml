@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Sales / Output VAT (PDV) -->
+        <record id="hr_pdv_25_sale" model="account.tax.template">
+            <field name="name">PDV 25% (prodaja)</field>
+            <field name="description">PDV 25%</field>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_pdv_13_sale" model="account.tax.template">
+            <field name="name">PDV 13% (prodaja)</field>
+            <field name="description">PDV 13%</field>
+            <field name="amount">13</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_pdv_5_sale" model="account.tax.template">
+            <field name="name">PDV 5% (prodaja)</field>
+            <field name="description">PDV 5%</field>
+            <field name="amount">5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_pdv_0_export_sale" model="account.tax.template">
+            <field name="name">PDV 0% (izvoz)</field>
+            <field name="description">PDV 0% izvoz</field>
+            <field name="amount">0</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">sale</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <!-- Purchase / Input VAT -->
+        <record id="hr_pdv_25_purchase" model="account.tax.template">
+            <field name="name">PDV 25% (nabava)</field>
+            <field name="description">PDV 25%</field>
+            <field name="amount">25</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_pdv_13_purchase" model="account.tax.template">
+            <field name="name">PDV 13% (nabava)</field>
+            <field name="description">PDV 13%</field>
+            <field name="amount">13</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_pdv_5_purchase" model="account.tax.template">
+            <field name="name">PDV 5% (nabava)</field>
+            <field name="description">PDV 5%</field>
+            <field name="amount">5</field>
+            <field name="amount_type">percent</field>
+            <field name="type_tax_use">purchase</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+    </data>
+</odoo>

@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+
+        <!-- Assets -->
+        <record id="hr_acc_1000" model="account.account.template">
+            <field name="code">100000</field>
+            <field name="name">Žiro račun (Bank)</field>
+            <field name="account_type">asset_cash</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_acc_1020" model="account.account.template">
+            <field name="code">102000</field>
+            <field name="name">Blagajna (Cash)</field>
+            <field name="account_type">asset_cash</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_acc_1200" model="account.account.template">
+            <field name="code">120000</field>
+            <field name="name">Potraživanja od kupaca (Accounts Receivable)</field>
+            <field name="account_type">asset_receivable</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+            <field name="reconcile" eval="True"/>
+        </record>
+
+        <record id="hr_acc_1800" model="account.account.template">
+            <field name="code">180000</field>
+            <field name="name">Pretporez PDV (VAT deductible)</field>
+            <field name="account_type">asset_current</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <!-- Liabilities -->
+        <record id="hr_acc_2200" model="account.account.template">
+            <field name="code">220000</field>
+            <field name="name">Obveze prema dobavljačima (Accounts Payable)</field>
+            <field name="account_type">liability_payable</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+            <field name="reconcile" eval="True"/>
+        </record>
+
+        <record id="hr_acc_2400" model="account.account.template">
+            <field name="code">240000</field>
+            <field name="name">PDV obveza (VAT payable)</field>
+            <field name="account_type">liability_current</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_acc_2500" model="account.account.template">
+            <field name="code">250000</field>
+            <field name="name">Obveze za plaće (Payroll payable)</field>
+            <field name="account_type">liability_current</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <!-- Income -->
+        <record id="hr_acc_7500" model="account.account.template">
+            <field name="code">750000</field>
+            <field name="name">Prihodi od prodaje (Sales income)</field>
+            <field name="account_type">income</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <!-- Expense -->
+        <record id="hr_acc_4000" model="account.account.template">
+            <field name="code">400000</field>
+            <field name="name">Troškovi materijala (Material cost)</field>
+            <field name="account_type">expense</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_acc_4700" model="account.account.template">
+            <field name="code">470000</field>
+            <field name="name">Troškovi plaća (Payroll expense)</field>
+            <field name="account_type">expense</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <record id="hr_acc_7100" model="account.account.template">
+            <field name="code">710000</field>
+            <field name="name">Nabavna vrijednost prodane robe (COGS)</field>
+            <field name="account_type">expense_direct_cost</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+        <!-- Equity -->
+        <record id="hr_acc_9500" model="account.account.template">
+            <field name="code">950000</field>
+            <field name="name">Zadržana dobit (Retained earnings)</field>
+            <field name="account_type">equity</field>
+            <field name="chart_template_id" ref="chart_template_hr_demo"/>
+        </record>
+
+    </data>
+</odoo>

@@ -10,7 +10,7 @@ Minimal chart of accounts (~12 accounts) and dominant PDV tax templates
 features. NOT a production localization — do not use as a replacement
 for a real l10n_hr.
     """,
-    "version": "16.0.1.0.0",
+    "version": "19.0.1.0.0",
     "author": "bring.out doo Sarajevo",
     "website": "https://www.bring.out.ba",
     "category": "Localization",
